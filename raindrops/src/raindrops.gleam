@@ -33,8 +33,3 @@ pub fn convert(number: Int) -> String {
   |> raindrop_by_7
   |> check_empty
 }
-
-pub fn main() {
-  let res = convert(34)
-  io.debug(res)
-}
