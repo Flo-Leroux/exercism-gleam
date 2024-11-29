@@ -1,23 +1,30 @@
+import gleam/list
+
 pub fn new_list() -> List(String) {
-  todo
+  []
 }
 
 pub fn existing_list() -> List(String) {
-  todo
+  ["Gleam", "Go", "TypeScript"]
 }
 
 pub fn add_language(languages: List(String), language: String) -> List(String) {
-  todo
+  [language, ..languages]
 }
 
 pub fn count_languages(languages: List(String)) -> Int {
-  todo
+  list.length(languages)
 }
 
 pub fn reverse_list(languages: List(String)) -> List(String) {
-  todo
+  list.reverse(languages)
 }
 
 pub fn exciting_list(languages: List(String)) -> Bool {
-  todo
+  case languages {
+    [first, ..] if first == "Gleam" -> True
+    [_, second] -> second == "Gleam"
+    [_, second, _] -> second == "Gleam"
+    _ -> False
+  }
 }
