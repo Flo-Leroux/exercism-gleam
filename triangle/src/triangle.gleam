@@ -18,4 +18,3 @@ pub fn isosceles(a: Float, b: Float, c: Float) -> Bool {
 pub fn scalene(a: Float, b: Float, c: Float) -> Bool {
   is_triangle(a, b, c) && a != b && a != c && b != c
 }
-// TODO
