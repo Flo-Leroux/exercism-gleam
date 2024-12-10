@@ -45,20 +45,6 @@ pub fn initials(full_name: String) {
 }
 
 pub fn pair(full_name1: String, full_name2: String) {
-  //      ******       ******
-  //    **      **   **      **
-  //  **         ** **         **
-  // **            *            **
-  // **                         **
-  // **     X. X.  +  X. X.     **
-  //  **                       **
-  //    **                   **
-  //      **               **
-  //        **           **
-  //          **       **
-  //            **   **
-  //              ***
-  //               *
   heart_template
   |> string.replace(each: "{{$1}}", with: full_name1 |> initials)
   |> string.replace(each: "{{$2}}", with: full_name2 |> initials)
