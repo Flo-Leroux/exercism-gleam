@@ -40,7 +40,7 @@ pub fn initial(name: String) {
 pub fn initials(full_name: String) {
   full_name
   |> string.split(" ")
-  |> list.map(fn(name) { initial(name) })
+  |> list.map(initial)
   |> string.join(" ")
 }
 
